@@ -21,6 +21,7 @@ services:
     - --config=${EL_NETWORK}
     - --datadir=/nethermind/data
     - --log=${NETHERMIND_LOG_LEVEL}
+    - --Init.ProcessingEnabled=${EC_SNAP_SYNC_ENABLED}
     - --Sync.SnapSync=${EC_SNAP_SYNC_ENABLED}
     - --Sync.SnapServe=${EC_SNAP_SERVE_ENABLED}
     - --JsonRpc.Enabled=true
